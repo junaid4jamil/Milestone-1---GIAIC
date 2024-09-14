@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milestone 1: Static Interactive Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="box">
+        <nav>
+            <ul class="section-list">
+                <li class="section">
+                    <a href="#personal_info"> Personal Information</a>
+                </li>
+                <li class="section">
+                    <a href="#education">Education</a>
+                </li>
+                <li class="section">
+                    <a href="#skills">Skills</a>
+                </li>
+                <li class="section">
+                    <a href="#work_experience">Work Experience</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="milestone">
+            <span class="milestone1">Milestone 1: Static Interactive Resume</span>
+        </div>
+        <div >
+            <h1 class="pinfo-detail" >Personal Information <button onclick="togglePersonal('personal_info', this)">Hide</button></h1>
+                
+            <hr />
+            <div class="profile-container space-between " id="personal_info" >
+                <div class="profile-info">
+                    <p class="pinfo">Name : <span class="pinfo-detail">Muhammad Jameel Khan</span></p>
+                    <p class="pinfo">Father's Name : <span class="pinfo-detail">Muhammad Rafique Khan</span></p>
+                    <p class="pinfo">Address : <span class="pinfo-detail">Karachi, Pakistan</span></p>
+                    <p class="pinfo">Contact : <span class="pinfo-detail">+92 333 33 650 74</span></p>
+                    <p class="pinfo">Email : <span class="pinfo-detail">junaid4jamil@gmail.com</span></p>
+                </div>
+                <div>
+                    <img src="./img/Profile Image.jpg" alt="Profile Image" class="profile-image">
+                </div>
+            </div>
+        </div>
+        <div class="space-between">
+            <h1 class="edu">Education <button onclick="toggleEducation('education', this)">Hide</button></h1>
+            <hr />
+            <div id="education">
+            <p class="edu">Darse -e- Nizami (3rd Year)</p>
+            <p class="edu">High School Certificate from BISE Hyderabad.</p>
+            <p class="edu">Secondary School Certificate from BISE Hyderabad.</p>
+            <p class="edu">DCBM (Diploma in Computerized Business Management)</p>
+        </div>
+        </div>
+        <div class="space-between">
+            <h1 class="skill">Skills <button onclick="toggleSkills('skills', this)">Hide</button></h1>
+            <hr />
+            <div id="skills">
+            <p class="skill">Front-end Development:</p>
+            <p class="skill">HTML, CSS, JavaScript, React JS</p>
+            <p class="skill">Software:</p>
+            <p class="skill">MS Office, Inpage 2000, Dreamweaver, Photoshop</p>
+            <p class="skill">ERP Software:</p>
+            <p class="skill">E Business Suit - Oracle</p>
+            <p class="skill">SAP</p>
+            <p class="skill">Networking:</p>
+            <p class="skill">Configuration, management, troubleshooting of network devices</p>
+            <p class="skill"> Excellent problem-solving and analytical skills</p>
+            <p class="skill"> Strong communication and teamwork abilities.</p>
+            </p>
+        </div>
+        </div>
+        <div class="space-between" >
+            <h1 class="experience">Work Experience <button onclick="toggleWorkExperience('work_experience', this)">Hide</button></h1>
+            <hr />
+            <div id="work_experience">
+            <p class="company">Askari Pharmacy (June 2022 - Present)</p>
+            <p class="experience">Oversaw operational processes and implemented strategies to improve efficiency.
+                Optimized inventory
+                control procedures and ensured product stock adequacy. </p>
+            <p class="experience">Monitored inventory using software and analyzed data to anticipate future
+                needs.
+            </p>
+            <p class="company">IBL Operations (Pvt) Ltd (November 2011 - June 2022)</p>
+            <p class="position">Assistant Manager Warehouse (July 2021 - June 2022)</p>
+            <p class="experience">Optimized inventory control procedures and ensured product stock adequacy.
+                Monitored inventory using
+                software and analyzed data to anticipate future needs. </p>
+            <p class="experience">Collaborated with warehouse employees and other staff to meet business
+                goals.</p>
+            <p class="position">Branch Operation Supervisor (July 2016 - June 2021)</p>
+            <p class="experience">Oversaw operational processes and implemented strategies to improve efficiency.
+                Researched methods to
+                reduce costs and provided training to workers.</p>
+            <p class="experience">Maintained department performance reports and ensured compliance with regulations.
+            </p>
+            <p class="position">Branch Support Officer (November 2011 - July 2016)</p>
+            <p class="experience">Provided support to Operations Officer and assisted in managing operational
+                issues. Updated internal
+                operation procedures and maintained corporate documents.</p>
+            </div>
+        </div>
+        <footer>
+            <hr />
+            <p>Created by : Muhammad Jameel Khan</p>
+        </footer>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #518000;
+}
+
+
+#box {
+    max-width: 800px;
+    min-width: 800px;
+    padding: 20px;
+    background-color: #f0f0f0de;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.space-between {
+    padding: 20px 0 0 0;
+}
+
+.profile-image {
+    width: 170px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 10px;
+    z-index: 0;
+}
+
+.profile-info {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.pinfo {
+    margin: 10px 0;
+}
+
+.pinfo-detail {
+    font-weight: bold;
+}
+
+
+.section-list {
+    top: 0;
+    margin-left: -10px;
+    display: flexbox;
+    width: 100%;
+    max-width: 800px;
+    position: fixed;
+    list-style-type: none;
+    background-color: #0000007a;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    z-index: 10;
+
+}
+
+.section {
+    display: inline-block;
+    text-align: center;
+    padding: 16px;
+}
+
+li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(174, 211, 6);
+}
+
+li a:hover {
+    text-decoration: none;
+    font-weight: bold;
+    color: #00FF00;
+    text-shadow:
+        0 0 7px #00FF00,
+        0 0 10px #00FF00,
+        0 0 21px #00FF00,
+        0 0 42px #3CE7D7,
+        0 0 82px #3CE7D7,
+        0 0 92px #3CE7D7,
+        0 0 102px #3CE7D7,
+        0 0 151px #3CE7D7;
+}
+
+.milestone {
+    width: 100%;
+    height: 25vh;
+    font-size: 36px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.milestone .milestone1 {
+    color: transparent;
+    text-align: center;
+    margin: 0;
+    animation: effect 2s linear infinite;
+}
+
+@keyframes effect {
+    0% {
+        background: linear-gradient(#008000, #00FF00);
+        -webkit-background-clip: text;
+    }
+
+    30% {
+        background: linear-gradient(#80004f, #ff0059);
+        -webkit-background-clip: text;
+    }
+
+    70% {
+        background: linear-gradient(#518000, #ffff00);
+        -webkit-background-clip: text;
+    }
+
+    100% {
+        background: linear-gradient(#3CE7D7, #000FFF);
+        -webkit-background-clip: text;
+    }
+}
+
+img {
+    width: 200px;
+    height: 230px;
+    filter: drop-shadow(6px 6px 4px #59345a9c);
+}
+
+
+.pinfo {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.pinfo-detail {
+    font-weight: bold;
+    color: transparent;
+    background: linear-gradient(#80004f, #ff0059);
+    background-clip: text;
+}
+
+.edu {
+    color: transparent;
+    background: linear-gradient(#355203, #b3b306);
+    background-clip: text;
+    line-height: 1.6;
+}
+
+.skill {
+    color: transparent;
+    background: linear-gradient(#008000, #00FF00);
+    background-clip: text;
+    line-height: 1.6;
+}
+
+.company {
+    font-weight: bold;
+    color: transparent;
+    background: linear-gradient(#80004f, #ff0059);
+    background-clip: text;
+}
+
+.experience {
+    color: transparent;
+    background: linear-gradient(#3CE7D7, #000FFF);
+    background-clip: text;
+    line-height: 1.6;
+}
+
+footer {
+    text-align: center;
+    font-weight: bolder;
+}
+
+footer p {
+    margin-top: 20px;
+}
+
+.position {
+    font-weight: bolder;
+}
+
+button {
+    padding: 3px;  
+    font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+  
+    button:hover {
+      background-color: #45a049;
+    }
+  
+    .hidden{
+      display: none;
+    }
